@@ -84,6 +84,8 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingHorizontal: 12,
     paddingVertical: 10,
+    width: "100%",
+    marginBottom: 20
   },
   buttonContainer: { marginTop: 8 },
   linkLine: { marginTop: 12, textAlign: "center" },
