@@ -18,7 +18,22 @@ export type RegisterResponse = {
   email: string;
 };
 
+export type LoginRequest = {
+  email: string;
+  pswd: string;
+};
+
+export type LoginResponse = {
+  userId: number;
+  email: string;
+  token: string;
+};
+
+
 export const authService = {
   registerUser: (data: RegisterRequest) =>
     httpRequest<ApiResponse<RegisterResponse>>("/auth/register", "POST", data),
+  
+   loginUser: (data: LoginRequest) =>
+    httpRequest<ApiResponse<LoginResponse>>("/auth/login", "POST", data),
 };
