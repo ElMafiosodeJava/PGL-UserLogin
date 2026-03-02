@@ -1,8 +1,37 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { ActivityIndicator, StyleSheet, Text, View } from 'react-native'
+import React, { useEffect, useState } from 'react'
 import { Drawer } from 'expo-router/drawer';
+import { useRouter } from 'expo-router';
+import { tokenService } from '../../services/token.service';
 
 const DrawerLayout = () => {
+    const router = useRouter();
+  const [loading, setLoading] = useState(true);
+  const [hasToken, setHasToken] = useState(false);
+
+  useEffect(() => {
+    (async () => {
+      const token = await tokenService.getToken();
+      const ok = !!token;
+      setHasToken(ok);
+      setLoading(false);
+
+      if (!ok) {
+        router.replace("/(auth)/login");
+      }
+    })();
+  }, [router]);
+
+  if (loading) {
+    return (
+      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+        <ActivityIndicator />
+      </View>
+    );
+  }
+
+  if (!hasToken) return null;
+
     const isUserLogged = false
     return (
         <Drawer screenOptions={{ headerShown: true, swipeEnabled: true }}>
