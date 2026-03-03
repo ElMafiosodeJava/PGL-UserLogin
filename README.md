@@ -92,8 +92,10 @@ La aplicación sigue una estructura modular:
 #Ejercicios
 # Ejercicios
 
-- [Ejercicio 1](./ejercicios/Ejercicio_1.md)
-- [Ejercicio 2](./ejercicios/Ejercicio_2.md)
-- [Ejercicio 3](./ejercicios/Ejercicio_3.md)
-- [Ejercicio 4](./ejercicios/Ejercicio_4.md)
-- [Ejercicio 5](./ejercicios/Ejercicio_5.md)
+# Ejercicios
+
+- [Ejercicio 1](./pgl-ahc-tuts/ejercicios/Ejercicio_1.md)
+- [Ejercicio 2](./pgl-ahc-tuts/ejercicios/Ejercicio_2.md)
+- [Ejercicio 3](./pgl-ahc-tuts/ejercicios/Ejercicio_3.md)
+- [Ejercicio 4](./pgl-ahc-tuts/ejercicios/Ejercicio_4.md)
+- [Ejercicio 5](./pgl-ahc-tuts/ejercicios/Ejercicio_5.md)
