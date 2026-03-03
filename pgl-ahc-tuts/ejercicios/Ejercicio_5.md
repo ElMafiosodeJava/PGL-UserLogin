@@ -1,0 +1,3 @@
+Ejercicio 5
+
+Realizado un archivo welcome.sevice para crear una función asíncrona que llame al token alojado en el teléfono del usuario logueado y lo pase por parámetro junto al string "bearer", si hace un get directamente al endpoint con el token llamando a la función httpRequest, la api le devuelve un string con el mensaje. Por último en la pantalla welcome la función onShowWelcomeMessage llama a la función asíncrona welcomeService y le devuelven el mensaje y puede devolver un objeto directamente o un mensaje.
