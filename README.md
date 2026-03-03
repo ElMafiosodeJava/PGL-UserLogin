@@ -90,8 +90,8 @@ La aplicación sigue una estructura modular:
 - Manejo tipado de respuestas HTTP mediante genéricos.
 
 #Ejercicios
-[Ejercicio_1](Ejercicio_1)
-[Ejercicio_2](Ejercicio_2)
-[Ejercicio_3](Ejercicio_3)
-[Ejercicio_4](Ejercicio_4)
-[Ejercicio_5](Ejercicio_5)
+[Ejercicio_1](Ejercicio_1.d)
+[Ejercicio_2](Ejercicio_2.md)
+[Ejercicio_3](Ejercicio_3.md)
+[Ejercicio_4](Ejercicio_4.md)
+[Ejercicio_5](Ejercicio_5.md)
