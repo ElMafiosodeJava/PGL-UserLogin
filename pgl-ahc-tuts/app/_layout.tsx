@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
 import { Link, Slot, useRouter } from 'expo-router';
 import { useState } from 'react';
+import React from 'react';
 
 const AppLayout = () => {
     const router = useRouter();
